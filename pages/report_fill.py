@@ -1,6 +1,5 @@
 from playwright.sync_api import Page
 
-from locators import *
 from settings import *
 
 
@@ -22,10 +21,9 @@ def all_selects(page: Page):
 
 # Изменине периода отчета, если date-start='' - по умолчанию сегодняшняя дата
 def date_change(page: Page):
-    page.locator('#date-start').click()
-    page.locator(f"{parent_selector_start} >> {child_selector_start}").click()
-    page.locator('#date-end').click()
-    page.locator(f"{parent_selector_end} >> {child_selector_end}").click()
+    page.locator('#date-start').fill(date_start)
+    page.locator('#date-end').fill(date_end)
+
 
 
 # Заполнения коментария (отчета)
