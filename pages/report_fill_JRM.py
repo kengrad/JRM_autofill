@@ -28,7 +28,7 @@ def date_change(page: Page):
 
 # Заполнения коментария (отчета)
 def coment_fill(page: Page):
-    page.locator("#id_comment").fill(coment)
+    page.locator("#id_comment").fill(report_JRM)
 
 
 # Заполнение проблем и рисокв
