@@ -17,8 +17,8 @@ report_watcher = '''- техна 2ч
 
 
 # JRM Обычно константы, которые редко меняются
-login = ''  # Свой логин
-password = ''  # Свой пароль
+login = 'alg'  # Свой логин
+password = '83kXrUAfA55xMi'  # Свой пароль
 project = 'Пациент'
 
 username = 'Александр Галяутдинов_KODE'
