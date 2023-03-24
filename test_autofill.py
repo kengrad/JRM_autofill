@@ -14,7 +14,7 @@ def test_jrm_autofill(page):
     coment_fill(page)
     issue_and_risks_fill(page)
     submit(page)
-    page.wait_for_timeout(10000)
+    page.wait_for_timeout(15000)
 
 
 def test_watcher_autofill(page):
@@ -23,4 +23,4 @@ def test_watcher_autofill(page):
     report_fill_watcher(page)
 
 
-    page.wait_for_timeout(5000)
+    page.wait_for_timeout(15000)
