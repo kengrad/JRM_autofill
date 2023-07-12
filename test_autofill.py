@@ -5,22 +5,20 @@ from pages.report_fill_watcher import report_fill_watcher
 
 
 def test_jrm_autofill(page):
-    page.goto("http://10.39.3.226:8000/form/")
     auth(page)
-    auth2(page)
+
+    auth_in_report_form(page)
     if date_start:
         date_change(page)
     all_selects(page)
     coment_fill(page)
     issue_and_risks_fill(page)
     submit(page)
-    page.wait_for_timeout(15000)
+    page.wait_for_timeout(15000)  # чтоб полюбоваться на свой отчет и заапрувить
 
 
 def test_watcher_autofill(page):
-    page.goto("https://watcher.kode.ru/signin")
     auth_watcher(page)
     report_fill_watcher(page)
 
-
-    page.wait_for_timeout(15000)
+    page.wait_for_timeout(15000)  # чтоб полюбоваться на свой отчет и заапрувить
