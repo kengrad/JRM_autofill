@@ -32,3 +32,6 @@ group = ['Александр Галяутдинов', 'Алёна Кудинов
 # WATCHER settings
 email = ''
 watcher_password = ''
+
+JRM_TIMEOUT = 15000
+WATCHER_TIMEOUT = 30000
