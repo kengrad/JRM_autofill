@@ -32,6 +32,6 @@ class AuthWatcherLocators:
 
 
 class WatcherLocators:
-    CHOOSE_DAY = 'div.day.day--today.day--selected.week__days-sector__day > div.day-body > a'
-    CHOOSE_PROJECT = 'div.day.day--today.day--selected.week__days-sector__day'
+    CHOOSE_DAY = '.flat-button.flat-button--with-icon.flat-button--theme-red-bright.flat-button--highlighted'
+    CHOOSE_PROJECT = '.items-list.search-list__list'
     COMMENT = '.content-editable__textarea.selectable'

@@ -1,8 +1,12 @@
 from datetime import datetime
 
+from settings import date_start
+
+
+# def reformat_today_date():
+#     today_date = str(datetime.today())
+#     return f"{datetime.strptime(today_date[:10], '%Y-%m-%d').strftime('%d.%m')}"
+
 
 def reformat_today_date():
-    today_date = str(datetime.today())
-    return f"{datetime.strptime(today_date[:10], '%Y-%m-%d').strftime('%d.%m')}"
-
-
+    return f"{date_start[:5]}"
