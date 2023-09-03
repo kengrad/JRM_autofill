@@ -1,3 +1,5 @@
+from pytest import mark
+
 from pages.auth_JRM import *
 from pages.report_fill_JRM import JrmFill
 from pages.report_fill_watcher import WatcherFill
@@ -16,6 +18,7 @@ class TestAutofill:
         page.issue_and_risks_fill()
         page.submit()
 
+    @mark.debug
     def test_watcher_autofill(self, page: Page) -> None:
         page = WatcherFill(page)
         page.auth_watcher()
