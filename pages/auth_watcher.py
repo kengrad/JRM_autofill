@@ -5,9 +5,8 @@ from locators.locators import AuthWatcherLocators
 
 # авторизация в Watcher
 
-class AuthWatcher():
+class AuthWatcher:
     def __init__(self, page: Page):
-        super().__init__(page)
         self.page = page
 
     def auth_watcher(self):

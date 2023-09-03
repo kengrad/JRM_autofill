@@ -1,12 +1,13 @@
+from typing import Any
+
 from playwright.sync_api import Page
 from settings import login, password
 from locators.locators import JrmAuthLocators
 
 
 # первичная авторизация в JRM
-class AuthJrm(Page):
+class AuthJrm:
     def __init__(self, page: Page):
-        super().__init__(page)
         self.page = page
 
     def auth(self):
