@@ -1,13 +1,14 @@
 JRM autofill
 
-Script for autofill information in JRM
+Script for autofill information in JRM and Watcher
 
 Предусловия:
 Включен офисный ВПН
 
 
 Перед использованием скрипта убедитесь, что:
-- установлены playwright-pytest и pytest
+- создано виртуальное окружение
+- установлены зависимости из requirements.txt (pip install -r requirements.txt)
 - проверьте устанавлены ли браузеры playwright командой: playwright install
 
 Инструкция
