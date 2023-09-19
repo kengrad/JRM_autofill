@@ -1,6 +1,6 @@
+from locators.locators import JrmLocators
 from pages.auth_JRM import AuthJrm
 from settings import *
-from locators.locators import JrmLocators
 
 
 class JrmFill(AuthJrm):

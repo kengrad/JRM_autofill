@@ -1,7 +1,6 @@
-from handlers import reformat_date, reformat_today_date
-from pages.auth_watcher import AuthWatcher
-from settings import report_watcher, project, WATCHER_TIMEOUT, date_start
 from locators.locators import WatcherLocators
+from pages.auth_watcher import AuthWatcher
+from settings import report_watcher, project, WATCHER_TIMEOUT
 
 
 class WatcherFill(AuthWatcher):

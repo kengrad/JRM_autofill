@@ -1,6 +1,7 @@
 from playwright.sync_api import Page
-from settings import email, watcher_password
+
 from locators.locators import AuthWatcherLocators
+from settings import email, watcher_password
 
 
 # авторизация в Watcher

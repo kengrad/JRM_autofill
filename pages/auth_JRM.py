@@ -1,8 +1,7 @@
-from typing import Any
-
 from playwright.sync_api import Page
-from settings import login, password
+
 from locators.locators import JrmAuthLocators
+from settings import login, password
 
 
 # первичная авторизация в JRM
