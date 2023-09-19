@@ -1,12 +1,18 @@
 from playwright.sync_api import Page
-from settings import *
+
 from locators.locators import AuthWatcherLocators
+from settings import email, watcher_password
 
-#авторизация в Watcher
-def auth_watcher(page: Page):
-    page.goto(AuthWatcherLocators.link)
-    page.get_by_placeholder(AuthWatcherLocators.EMAIL).fill(email)
-    page.get_by_text(AuthWatcherLocators.LOGIN_BUTTON).click()
-    page.get_by_placeholder(AuthWatcherLocators.PASSWORD).fill(watcher_password)
-    page.get_by_text(AuthWatcherLocators.LOGIN_BUTTON).click()
 
+# авторизация в Watcher
+
+class AuthWatcher:
+    def __init__(self, page: Page):
+        self.page = page
+
+    def auth_watcher(self):
+        self.page.goto(AuthWatcherLocators.link)
+        self.page.get_by_placeholder(AuthWatcherLocators.EMAIL).fill(email)
+        self.page.get_by_text(AuthWatcherLocators.LOGIN_BUTTON).click()
+        self.page.get_by_placeholder(AuthWatcherLocators.PASSWORD).fill(watcher_password)
+        self.page.get_by_text(AuthWatcherLocators.LOGIN_BUTTON).click()

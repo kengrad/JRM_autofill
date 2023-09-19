@@ -33,5 +33,5 @@ class AuthWatcherLocators:
 
 class WatcherLocators:
     CHOOSE_DAY = 'div.day.day--today.day--selected.week__days-sector__day > div.day-body > a'
-    CHOOSE_PROJECT = 'div.day.day--today.day--selected.week__days-sector__day'
+    CHOOSE_PROJECT = '.items-list.search-list__list'
     COMMENT = '.content-editable__textarea.selectable'
